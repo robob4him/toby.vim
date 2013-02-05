@@ -1,1 +1,2 @@
-../modules/quotes_auto_close_mapping.vim
+inoremap <buffer> " ""<LEFT>
+inoremap <buffer> ' ''<LEFT>

@@ -1,1 +1,1 @@
-../modules/auto_closechar_curly_brace.vim
+inoremap { {<CR>}<C-O>O

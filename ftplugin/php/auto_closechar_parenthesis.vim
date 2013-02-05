@@ -1,1 +1,1 @@
-../modules/auto_closechar_parenthesis.vim
+inoremap <buffer> ( ()<LEFT>

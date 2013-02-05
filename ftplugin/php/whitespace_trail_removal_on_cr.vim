@@ -1,1 +1,1 @@
-../modules/whitespace_trail_removal_on_cr.vim
+inoremap <CR> <CR><C-R>=whitespacetrail#RemoveTrailingWhitespace(-1)<CR>

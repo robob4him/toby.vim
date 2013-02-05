@@ -1,1 +1,1 @@
-../modules/highlight_extrawhitespaces.vim
+call whitespacetrail#ShowWhitespaceTrail()

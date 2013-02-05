@@ -1,1 +1,3 @@
-../modules/disable_automatic_wrapping_of_all_text.vim
+" Disable automatic wrapping of text
+" Only comments should be auto wrapped
+setlocal formatoptions-=t
