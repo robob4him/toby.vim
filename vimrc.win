@@ -5,7 +5,7 @@ filetype off                   " required!
 
 
 " Init Vundle
-set rtp+=G:/vimfiles/bundle/vundle/
+set rtp+=~/vimfiles/bundle/vundle/
 call vundle#rc()
 
 " let Vundle manage Vundle
@@ -73,8 +73,8 @@ if has("autocmd")
 endif
 
 " Set backup dirs
-set dir=G:/,.
-set bdir=G:/Backup
+set dir=~/Backup,.
+set bdir=~/Backup
 
 " Set numbers, sort casing, tabstops and such
 set number
@@ -165,8 +165,8 @@ cnoremap w!! w !sudo tee % >/dev/null
 " MovingThroughCamelCaseWords
 nnoremap <silent><C-Left>  :<C-u>cal search('\<\<Bar>\U\@<=\u\<Bar>\u\ze\%(\U\&\>\@!\)\<Bar>\%^','bW')<CR>
 nnoremap <silent><C-Right> :<C-u>cal search('\<\<Bar>\U\@<=\u\<Bar>\u\ze\%(\U\&\>\@!\)\<Bar>\%$','W')<CR>
-inoremap <silent><C-Left>  <C-o>:cal search('\<\<Bar>\U\@<=\u\<Bar>\u\ze\%(\U\&\>\@!\)\<Bar>\%^','bW')<CR>
-inoremap <silent><C-Right> <C-o>:cal search('\<\<Bar>\U\@<=\u\<Bar>\u\ze\%(\U\&\>\@!\)\<Bar>\%$','W')<CR> 
+"inoremap <silent><C-Left>  <C-o>:cal search('\<\<Bar>\U\@<=\u\<Bar>\u\ze\%(\U\&\>\@!\)\<Bar>\%^','bW')<CR>
+"inoremap <silent><C-Right> <C-o>:cal search('\<\<Bar>\U\@<=\u\<Bar>\u\ze\%(\U\&\>\@!\)\<Bar>\%$','W')<CR> 
 
 " Toggle paste with <ins>
 set pastetoggle=<ins>
@@ -200,7 +200,7 @@ set undolevels=1000 "maximum number of changes that can be undone
 set undoreload=10000 "maximum number lines to save for undo on a buffer reload
 
 " Colored column (to see line size violations)
-set colorcolumn=80
+set colorcolumn=100
 
 " Edit Files relativ to me
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
